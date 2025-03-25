@@ -1,0 +1,59 @@
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Button hover effect */
+.cta {
+    transition: all 0.3s ease;
+}
+
+.cta:hover {
+    background-color: gold;
+    color: black;
+    transform: scale(1.1);
+}
+
+/* Gallery image zoom effect */
+.gallery img {
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Testimonial slider animation */
+@keyframes slide {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+.testimonial-card {
+    animation: slide 0.5s ease-in-out;
+}
+
+/* Dark mode transition */
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
